@@ -1,0 +1,12 @@
+{
+    "name": "FEniCS Devcontainer",
+    "image": "stnb/fenics",
+    "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter"
+    ],
+    "settings": {
+      "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "postCreateCommand": "pip install --upgrade pip && pip install fenics && pip install meshio"
+}
